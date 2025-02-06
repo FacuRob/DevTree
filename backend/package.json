@@ -1,0 +1,30 @@
+{
+  "name": "devtree",
+  "version": "1.0.0",
+  "description": "Proyecto con Express y TypeSript",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "author": "Facundo Robles",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "bcrypt": "^5.1.1",
+    "colors": "^1.4.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "mongoose": "^8.9.5",
+    "slug": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/slug": "^5.0.9",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
