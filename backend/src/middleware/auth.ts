@@ -30,7 +30,7 @@ export const authenticate = async (
   }
 
   try {
-    const result = jwt.verify(token, process.env.JWT_SECCRET);
+    const result = jwt.verify(token, process.env.JWT_SECRET);
     if (typeof result === "object" && result.id) {
       const user = await User.findById(result.id).select("-password");
       if (!user) {
